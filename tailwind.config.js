@@ -134,8 +134,11 @@ module.exports = {
     colors: ({ colors }) => ({
 
       'primary': '#ffc045',
+        'primary-hover': '#f5b029',
       'secondary': '#3d2514',
+        'secondary-hover': '#231105',
       'red-primary': '#bf2222',
+        'red-primary-hover': '#990e0e',
 
       inherit: colors.inherit,
       current: colors.current,
