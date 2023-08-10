@@ -14,10 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "tailwindcss -i ./src/css/index.css -o ./main/style.css ",
+    "build": "postcss ./src/css/index.css -o ./main/style.css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,7 +38,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^9.1.1",
     "tailwindcss": "^3.3.3"
   }
 }
