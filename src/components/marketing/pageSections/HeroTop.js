@@ -5,6 +5,7 @@ import Header from './Header'
 import Products from '../../../medias/images/HeroTop/burger-hero-top.png'
 import Button from '../../elements/Button'
 
+
 export default function Herotop() {
   return (
       <div className=" bg-primary w-full">
@@ -36,6 +37,11 @@ export default function Herotop() {
             <Button className="mt-5 rounded-sm" color="secondary" theme="big">
               Créer mon compte
             </Button>
+            {/* bouton mehdi juste pour test 
+            <Button className="mt-5 rounded-sm" className="bg-gradient-to-r from-cyan-500 to-blue-500 mt-2" theme="big">
+              Produit par Mehdi Ahian
+            </Button>
+            */}
           </Container>
       </div>
     </div>
